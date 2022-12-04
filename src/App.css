@@ -21,7 +21,7 @@ body {
 .planet--image-geology {
   height: 100px;
   position: absolute;
-  top: 250px;
+  top: 230px;
 }
 
 /* REMOVE PADDING FROM MUI DEFAULT DRAWER STYLING */
