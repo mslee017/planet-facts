@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #070724;
+  color: #ffffff;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.planet--image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+
+.planet--image-geology {
+  height: 100px;
+  position: absolute;
+  top: 250px;
+}
+
+/* REMOVE PADDING FROM MUI DEFAULT DRAWER STYLING */
+.css-h4y409-MuiList-root {
+  padding: 0 !important;
+}
+
+/* FONT COLOR FOR THE TAB ELEMENT */
+.MuiButtonBase-root {
+  color: #ffffff !important;
+}
+
+/* MEDIA QUERIES FOR IMAGE STYLING & POSITIONING */
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (min-width: 900px) {
+  .planet--image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .planet--image-geology {
+    height: 150px;
+    top: 215px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 1200px) {
+  .planet--image {
+    width: 425px;
+    height: 425px;
+    position: absolute;
+    top: 180px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .planet--image-geology {
+    height: 200px;
+    top: 450px;
   }
 }
